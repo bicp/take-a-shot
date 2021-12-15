@@ -1,0 +1,19 @@
+{
+  "name": "take-a-shot",
+  "version": "1.0.0",
+  "description": "Trivia game on fake news regarding Covid",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bicp/take-a-shot.git"
+  },
+  "author": "Bianca Cirino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bicp/take-a-shot/issues"
+  },
+  "homepage": "https://github.com/bicp/take-a-shot#readme"
+}
