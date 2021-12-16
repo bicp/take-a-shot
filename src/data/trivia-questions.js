@@ -65,6 +65,16 @@ const questions = [
       explanation: "The mRNA vaccines deliver a small amount of genetic code to instruct cells how to replicate the virus’ surface protein ‘spike’, which in turn activates the immune system. Lymph nodes contain B-cells that use this information to generate antibodies in response to a foreign entity. The buildup of antibodies in the lymph nodes may result in them becoming enlarged. This can lead to breasts feeling larger for a short time following a COVID vaccine, but it is not cause for undue concern."
   },
   {
-        
+       claim: "A new study shows hydroxychloroquine can increase Covid-19 survival rates by 200%.", 
+       fact: false,
+       explanation: "This very small study has not been peer-reviewed and it does not show that hydroxychloroquine can effectively treat Covid-19."
+  },
+  {
+      claim: "Covid vaccine will turn people into crocodiles.",
+      fact: false,
+      explanation: "Despite the delusional claim of Brazilian President Bolsonaro, scientists would like to remind that you will NOT turn into a crocodile or a bearded lady if you vaccinate against covid-19."
+  },
+  {
+      
   }
 ];
