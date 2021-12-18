@@ -4,7 +4,8 @@
   "description": "Trivia game on fake news regarding Covid",
   "main": "./src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "http-server src"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/bicp/take-a-shot/issues"
   },
-  "homepage": "https://github.com/bicp/take-a-shot#readme"
+  "homepage": "https://github.com/bicp/take-a-shot#readme",
+  "dependencies": {
+    "http-server": "^14.0.0"
+  }
 }
