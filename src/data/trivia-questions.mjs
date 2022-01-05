@@ -74,7 +74,4 @@ export const questions = [
       fact: false,
       explanation: "Despite the delusional claim of Brazilian President Bolsonaro, scientists would like to remind that you will NOT turn into a crocodile or a bearded lady if you vaccinate against covid-19."
   },
-  {
-      
-  }
-];
+ ];
