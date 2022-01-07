@@ -4,15 +4,19 @@ https://bicp.github.io/take-a-shot
 
 ## Description
 
-First gaming project of IronHack. Trivia game on fake news regarding Covid.
-
-## MVP
-
-MVP definition, deliverables.
+Take a Shot is a trivia game on fake news regarding Covid-19, where the player has to decide if the claims are True or False. The player wins if they answer 3 times correctly, and they will loose if the answer is False.
 
 ## Backlog
 
-Backlog elements.
+- research
+- design basic concept
+- validate idea
+- build kanban board
+- build database
+- start project
+- deploy
+- test
+- build presentation
 
 ## Data structure
 
@@ -20,30 +24,25 @@ Backlog elements.
 
 - parameters: none
 - returns: none
-- description: starts the game by showing user the first question
+- description: starts the game by showing user the first question.
 
 ### resetGame
 
 - parameters: none
 - returns: none
-- description: reset the game by showing user the welcome page
+- description: reset the game by showing user the welcome page.
 
 ### checkIfGameIsOver
 
 - parameters: none
 - returns: none
-- description: check if game
+- description: check if user either had 3 correct or wrong answers.
 
-## States y States Transitions
+### setNextQuestion
 
-- welcomeScreen
-- gameScreen
-- gameoverScreen
-- winScreen
-
-## Task
-
-Task definition in order of priority
+- parameters: none
+- returns: none
+- description: show next question to user.
 
 ## Additional Links
 

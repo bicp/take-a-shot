@@ -70,6 +70,7 @@ body {
   --hue: var(--hue-wrong);
 }
 
+.restart-btn,
 .start-btn,
 .next-btn {
   font-size: 1.5rem;
@@ -81,6 +82,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+#end-game h1 {
+  text-align: center;
 }
 
 .hide {

@@ -9,14 +9,20 @@ let questionsCopy = [...questions];
 // start game btn
 const startButton = document.getElementById("start-btn");
 startButton.addEventListener("click", startGame);
+
 const welcomeText = document.getElementById("text");
 
 const questionContainerElement = document.getElementById("question-container");
 const explanationElement = document.getElementById("explanation");
+const endGameElement = document.getElementById("end-game");
+const welcomeContainerElement = document.getElementById("start-game");
 
 const ansBtnTrue = document.getElementById("btntrue");
 const ansBtnFalse = document.getElementById("btnfalse");
 const nextElement = document.getElementById("next-btn");
+const restartBtn = document.getElementById("restart-btn");
+
+restartBtn.addEventListener("click", resetGame);
 
 ansBtnTrue.addEventListener("click", function () {
   if (question.fact === true) {
@@ -46,7 +52,11 @@ ansBtnFalse.addEventListener("click", function () {
 
   const explanationElement = document.getElementById("explanation");
   explanationElement.innerText = question.explanation;
-  checkIfGameIsOver();
+
+  // a fix to show the explanation of the last question
+  setTimeout(() => {
+    checkIfGameIsOver();
+  });
 });
 
 ansBtnFalse.addEventListener("click", function () {
@@ -60,12 +70,12 @@ function checkIfGameIsOver() {
 
   if (correctAnswers === 3) {
     alert("Congratulations! You believe in science!");
-    resetGame();
+    endGame();
   } else if (wrongAnswers === 3) {
     alert(
-      "Please take a look at the WHO website and do not believe in Fake News."
+      "Please take a look at the WHO https://www.who.int/emergencies/diseases/novel-coronavirus-2019 and do not believe in Fake News!"
     );
-    resetGame();
+    endGame();
   } else {
     nextElement.classList.remove("hide");
   }
@@ -74,6 +84,16 @@ function checkIfGameIsOver() {
 nextElement.addEventListener("click", function () {
   startGame();
 });
+
+function endGame() {
+  questionContainerElement.classList.add("hide");
+  welcomeContainerElement.classList.add("hide");
+  correctAnswers = 0;
+  wrongAnswers = 0;
+
+  endGameElement.classList.remove("hide");
+  restartBtn.classList.remove("hide");
+}
 
 function startGame() {
   startButton.classList.add("hide");
@@ -97,6 +117,10 @@ function setNextQuestion() {
 }
 
 function resetGame() {
+  endGameElement.classList.add("hide");
+  restartBtn.classList.add("hide");
+  welcomeContainerElement.classList.remove("hide");
+
   startButton.classList.remove("hide");
   questionContainerElement.classList.add("hide");
   explanationElement.innerText = "";
