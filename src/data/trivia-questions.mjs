@@ -115,7 +115,7 @@ export const questions = [
       "Surface cleaning does not stop airborne transmission vírus, like Covid-19.",
     fact: true,
     explanation:
-      "Although it is important to keep surfaces clean, surface cleaning DOES NOT suppress the risk of Cvid-19. Clean the air!",
+      "Although it is important to keep surfaces clean, surface cleaning DOES NOT suppress the risk of Covid-19. Clean the air!",
   },
   {
     claim: "Physical barriers can serve as a Covid-19 trap.",

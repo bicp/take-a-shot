@@ -52,4 +52,4 @@ https://trello.com/b/qUKCJvVd/take-a-shot-trivia-game-on-fake-news-regarding-cov
 
 ### Slides
 
-[Link Slides.com](http://slides.com)
+(https://docs.google.com/presentation/d/1ifxl00R3ccRfPg8UmolZFhDH6RZraQlTHxB166noKms/edit?usp=sharing)
