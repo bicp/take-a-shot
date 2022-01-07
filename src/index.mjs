@@ -2,6 +2,9 @@ import { questions } from "./data/trivia-questions.mjs";
 let question;
 let correctAnswers = 0;
 let wrongAnswers = 0;
+let index;
+
+let questionsCopy = [...questions];
 
 // start game btn
 const startButton = document.getElementById("start-btn");
@@ -22,7 +25,6 @@ ansBtnTrue.addEventListener("click", function () {
     ansBtnTrue.classList.add("correct");
   } else {
     wrongAnswers = wrongAnswers + 1;
-    // soma no wrong answers
 
     ansBtnTrue.classList.add("wrong");
   }
@@ -38,7 +40,6 @@ ansBtnFalse.addEventListener("click", function () {
     ansBtnFalse.classList.add("correct");
   } else {
     wrongAnswers = wrongAnswers + 1;
-    // soma no wrong answers
 
     ansBtnFalse.classList.add("wrong");
   }
@@ -53,29 +54,28 @@ ansBtnFalse.addEventListener("click", function () {
 });
 
 function checkIfGameIsOver() {
+  questionsCopy = questionsCopy.filter(function (_, i) {
+    return index !== i;
+  });
+
   if (correctAnswers === 3) {
     alert("Congratulations! You believe in science!");
+    resetGame();
   } else if (wrongAnswers === 3) {
     alert(
       "Please take a look at the WHO website and do not believe in Fake News."
     );
+    resetGame();
+  } else {
+    nextElement.classList.remove("hide");
   }
 }
-
-ansBtnTrue.addEventListener("click", function () {
-  nextElement.classList.remove("hide");
-});
-
-ansBtnFalse.addEventListener("click", function () {
-  nextElement.classList.remove("hide");
-});
 
 nextElement.addEventListener("click", function () {
   startGame();
 });
 
 function startGame() {
-  console.log("Started");
   startButton.classList.add("hide");
   questionContainerElement.classList.remove("hide");
   explanationElement.innerText = "";
@@ -89,7 +89,22 @@ function startGame() {
 }
 
 function setNextQuestion() {
-  question = questions[Math.floor(Math.random() * questions.length)];
+  index = Math.floor(Math.random() * questionsCopy.length);
+  question = questionsCopy[index];
   const questionElement = document.getElementById("question");
   questionElement.innerText = question.claim;
+  nextElement.classList.add("hide");
+}
+
+function resetGame() {
+  startButton.classList.remove("hide");
+  questionContainerElement.classList.add("hide");
+  explanationElement.innerText = "";
+  ansBtnTrue.classList.remove("correct");
+  ansBtnTrue.classList.remove("wrong");
+  ansBtnFalse.classList.remove("correct");
+  ansBtnFalse.classList.remove("wrong");
+  welcomeText.classList.remove("hide");
+  nextElement.classList.add("hide");
+  questionsCopy = [...questions];
 }
