@@ -20,58 +20,107 @@ export const questions = [
       "This is incorrect, and the death rate is likely to be 5 or 10 times higher than this. However, it should be noted that the relative fatality of coronavirus is greatly affected by exogenous factors such as previous health conditions, age, and other factors such as smoking or obesity.",
   },
   {
-      claim: "COVID-19 is man-made.",
-      fact: false,
-      explanation: "Scientists from across the world have disproved this theory. Research firmly determines that coronavirus is a result of a naturally occurring process and not a product of laboratory engineering. New diseases have emerged throughout human history, and we have seen two other major coronavirus outbreaks in the last two decades: SARS and MERS. The COVID-19 pandemic is not a hoax, it is a global outbreak caused by the virus SARS-CoV-2."
+    claim: "COVID-19 is man-made.",
+    fact: false,
+    explanation:
+      "Scientists from across the world have disproved this theory. Research firmly determines that coronavirus is a result of a naturally occurring process and not a product of laboratory engineering. New diseases have emerged throughout human history, and we have seen two other major coronavirus outbreaks in the last two decades: SARS and MERS. The COVID-19 pandemic is not a hoax, it is a global outbreak caused by the virus SARS-CoV-2.",
   },
   {
-      claim: "Getting the vaccine will make me sick",
-      fact: false,
-      explanation: "After being vaccinated you may feel feverish, tired or sore, as your immune system is fighting a piece of the virus. The COVID-19 vaccinations contain either an mRNA segment or a viral vector, neither of which are able to cause an infection. mRNA and the viral vector contain the instructions for your cells to make only a piece of the virus, which allows your immune cells to recognize the virus if you come into contact with it again. It takes time for the body to develop protection against the virus, so you can still be infected with COVID-19 after being vaccinated. If you come into contact with the virus or an infected person shortly after receiving the shot, your immune system is not fully prepared to fight off the infection, and you may become ill."
+    claim: "Getting the vaccine will make me sick",
+    fact: false,
+    explanation:
+      "After being vaccinated you may feel feverish, tired or sore, as your immune system is fighting a piece of the virus. The COVID-19 vaccinations contain either an mRNA segment or a viral vector, neither of which are able to cause an infection. mRNA and the viral vector contain the instructions for your cells to make only a piece of the virus, which allows your immune cells to recognize the virus if you come into contact with it again. It takes time for the body to develop protection against the virus, so you can still be infected with COVID-19 after being vaccinated. If you come into contact with the virus or an infected person shortly after receiving the shot, your immune system is not fully prepared to fight off the infection, and you may become ill.",
   },
   {
-      claim: "The vaccine will change my DNA",
-      fact: false,
-      explanation: "The mRNA in the vaccine never enters the nucleus, which is where DNA is stored. The mRNA is not able to change DNA, and it will not alter a person's genetic makeup or reproductive cells."
+    claim: "The vaccine will change my DNA",
+    fact: false,
+    explanation:
+      "The mRNA in the vaccine never enters the nucleus, which is where DNA is stored. The mRNA is not able to change DNA, and it will not alter a person's genetic makeup or reproductive cells.",
   },
   {
-      claim: "Being around vaccinated people is dangerous",
-      fact: false,
-      explanation: "Vaccinated people can not 'shed' the virus or infect others, as the vaccine doesn't include the instructions to make an entire virus, only a piece of it."
+    claim: "Being around vaccinated people is dangerous",
+    fact: false,
+    explanation:
+      "Vaccinated people can not 'shed' the virus or infect others, as the vaccine doesn't include the instructions to make an entire virus, only a piece of it.",
   },
   {
-   claim: "COVID-19 vaccines cause variants.",
-   fact: false,
-   explanation: "New variants of a virus happen because the virus that causes COVID-19 constantly changes through a natural ongoing process of mutation (change).  As the virus spreads, it has more opportunities to change. High vaccination coverage in a population reduces the spread of the virus and helps prevent new variants from emerging."
+    claim: "COVID-19 vaccines cause variants.",
+    fact: false,
+    explanation:
+      "New variants of a virus happen because the virus that causes COVID-19 constantly changes through a natural ongoing process of mutation (change).  As the virus spreads, it has more opportunities to change. High vaccination coverage in a population reduces the spread of the virus and helps prevent new variants from emerging.",
   },
   {
-      claim: "COVID-19 vaccines contain microchips.",
-      fact: false,
-    explanation: "COVID-19 vaccines do not contain microchips. Vaccines are developed to fight against disease and are not administered to track your movement."
+    claim: "COVID-19 vaccines contain microchips.",
+    fact: false,
+    explanation:
+      "COVID-19 vaccines do not contain microchips. Vaccines are developed to fight against disease and are not administered to track your movement.",
   },
   {
-      claim: "Receiving a COVID-19 vaccine can make you magnetic.",
-      fact: false,
-      explanation: "COVID-19 vaccines do not contain ingredients that can produce an electromagnetic field at the site of your injection. All COVID-19 vaccines are free from metals."
+    claim: "Receiving a COVID-19 vaccine can make you magnetic.",
+    fact: false,
+    explanation:
+      "COVID-19 vaccines do not contain ingredients that can produce an electromagnetic field at the site of your injection. All COVID-19 vaccines are free from metals.",
   },
   {
-      claim: "COVID-19 vaccines can alter my DNA.",
-      fact: false,
-      explanation: "COVID-19 vaccines do not change or interact with your DNA in any way."
+    claim: "COVID-19 vaccines can alter my DNA.",
+    fact: false,
+    explanation:
+      "COVID-19 vaccines do not change or interact with your DNA in any way.",
   },
   {
-      claim: "Pfizer vaccine will make women boobs grow up to 2 sizes.",
-      fact: true,
-      explanation: "The mRNA vaccines deliver a small amount of genetic code to instruct cells how to replicate the virus’ surface protein ‘spike’, which in turn activates the immune system. Lymph nodes contain B-cells that use this information to generate antibodies in response to a foreign entity. The buildup of antibodies in the lymph nodes may result in them becoming enlarged. This can lead to breasts feeling larger for a short time following a COVID vaccine, but it is not cause for undue concern."
+    claim: "Pfizer vaccine will make women boobs grow up to 2 sizes.",
+    fact: true,
+    explanation:
+      "The mRNA vaccines deliver a small amount of genetic code to instruct cells how to replicate the virus’ surface protein ‘spike’, which in turn activates the immune system. Lymph nodes contain B-cells that use this information to generate antibodies in response to a foreign entity. The buildup of antibodies in the lymph nodes may result in them becoming enlarged. This can lead to breasts feeling larger for a short time following a COVID vaccine, but it is not cause for undue concern.",
   },
   {
-       claim: "A new study shows hydroxychloroquine can increase Covid-19 survival rates by 200%.", 
-       fact: false,
-       explanation: "This very small study has not been peer-reviewed and it does not show that hydroxychloroquine can effectively treat Covid-19."
+    claim:
+      "A new study shows hydroxychloroquine can increase Covid-19 survival rates by 200%.",
+    fact: false,
+    explanation:
+      "This very small study has not been peer-reviewed and it does not show that hydroxychloroquine can effectively treat Covid-19.",
   },
   {
-      claim: "Covid vaccine will turn people into crocodiles.",
-      fact: false,
-      explanation: "Despite the delusional claim of Brazilian President Bolsonaro, scientists would like to remind that you will NOT turn into a crocodile or a bearded lady if you vaccinate against covid-19."
+    claim: "Covid vaccine will turn people into crocodiles.",
+    fact: false,
+    explanation:
+      "Despite the delusional claim of Brazilian President Bolsonaro, scientists would like to remind that you will NOT turn into a crocodile or a bearded lady if you vaccinate against covid-19.",
   },
- ];
+  {
+    claim: "People have different levels of contagiousness.",
+    fact: true,
+    explanation:
+      "Studies indicate that there is a large variability in time for a given person. It is very well known that there is a peak of contagiousness just before and at the onset of symptoms, and that then contagiousness decreases (figure below). By the time most people are sick enough to go to the hospital, many are not contagious.  In addition, even for infected individuals virus emission is not constant, but it is rather an sporadic event.",
+  },
+  {
+    claim: "Temperature affects the survival of the virus in the air.",
+    fact: true,
+    explanation:
+      "Low temperatures can greatly increase the survival of the virus, while high temperatures reduce it. Superspreading events in meat packing plants are thought to have been helped by higher virus survival in the air at low temperature. Researchers freeze viruses to keep them viable for years, although this requires lower temperatures than in home freezers (-80oC). Higher temperatures reduce the viability of viruses.",
+  },
+  {
+    claim: "UV light fron the sun can kill the virus.",
+    fact: true,
+    explanation:
+      "Yes, UV light from the sun is very effective at deactivating the virus, especially at high intensities.",
+  },
+  {
+    claim: "People can still get infected despite wearing masks",
+    fact: true,
+    explanation:
+      "Small gaps between the mask and skin dramatically decrease the mask's filtration efficiency for aerosols, increasing the chances for transmissions in some types of masks. N95 respirators provide the highest virus filtrations efficiency.",
+  },
+  {
+    claim:
+      "Surface cleaning does not stop airborne transmission vírus, like Covid-19.",
+    fact: true,
+    explanation:
+      "Although it is important to keep surfaces clean, surface cleaning DOES NOT suppress the risk of Cvid-19. Clean the air!",
+  },
+  {
+    claim: "Physical barriers can serve as a Covid-19 trap.",
+    fact: true,
+    explanation:
+      "The physical barriers, such as table/desk shields, which are designed to block droplets can impede the airflow and even trap higher concentrations of aerosols in the breathing zone, increasing concentrations of aerosols in the breathing zone, increasing the risk of airborne transmission, and therefore, Covid-19.",
+  },
+];
