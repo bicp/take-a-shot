@@ -99,7 +99,7 @@ export const questions = [
       "Low temperatures can greatly increase the survival of the virus, while high temperatures reduce it. Superspreading events in meat packing plants are thought to have been helped by higher virus survival in the air at low temperature. Researchers freeze viruses to keep them viable for years, although this requires lower temperatures than in home freezers (-80oC). Higher temperatures reduce the viability of viruses.",
   },
   {
-    claim: "UV light fron the sun can kill the virus.",
+    claim: "UV light from the sun can kill the virus.",
     fact: true,
     explanation:
       "Yes, UV light from the sun is very effective at deactivating the virus, especially at high intensities.",
